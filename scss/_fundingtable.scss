@@ -1,0 +1,48 @@
+// Filters
+#crf-funding-table-filters {
+    label {
+        font-weight: 900;
+    }
+    select {
+        &:focus {
+            border: none;
+            box-shadow: 0 0 0 0.2rem rgba(208,74,67,.5);;
+        }
+    }
+    button {
+        background-color: #d04a43;
+        border-color: #d04a43;
+        color: white;
+        font-weight: 600;
+        &:focus {
+            border: none;
+            box-shadow: none;
+        }
+    }
+}
+
+// Table
+#crf-funding-table {
+    .card {        
+        border: none;
+        a {
+            cursor: pointer;
+            width: 100;
+            padding: 0;
+            margin: 0;
+        }
+        .card-header {
+            border: 4px solid #d04a43;
+            .card-icon {
+                font-size: 4rem;
+                position: absolute;
+                font-weight: 600;
+                bottom: -16px;
+                right: 10px;
+            }
+        }
+        .card-body {
+            border: none;
+        }
+    }
+}

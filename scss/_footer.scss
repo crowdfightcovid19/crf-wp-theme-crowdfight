@@ -1,0 +1,37 @@
+#cfct-site-footer {
+    background-color: rgb(234, 236, 237);
+    a {
+      color: #212529;
+    }
+    #cfct-site-footer-container {
+        color: rgb(33, 37, 41);
+        #cfct-site-footer-social {
+            ul {
+                list-style-type: none;
+                padding: 0px;
+                li {
+                    display: inline-block;
+                    padding-right: 10px;
+                    &:last-child {
+                        padding-right: 0px;
+                    }
+                    img {
+                        max-width: 24px;
+                    }
+                }
+            }
+        }
+        @include respond-below('sm') {
+            #cfct-site-footer-text {
+                text-align: center !important;
+            }
+            #cfct-site-footer-social {
+                padding-top: 20px;
+                text-align: center !important;
+                li {
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+}

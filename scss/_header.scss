@@ -1,0 +1,47 @@
+#cfct-site-header {
+    border-top: 4px solid #d04a43; 
+    // Logo
+    #cfct-logo {
+        img {
+            width: 100%;
+        }
+    }
+    // Menu
+    // #cfct-menu-container {
+        // ul {
+            // list-style: none;
+            // padding: 0;
+            // li {
+                // display: inline-block;
+                // a {
+                    // margin-right: 5px;
+                    // margin-left: 5px;
+                // }
+                // &:after {
+                    // content: "|";
+                // }
+                // &:first-child {
+                    // a {
+                        // margin-left: 0px;
+                    // }
+                // }
+                // &:last-child {
+                    // a {
+                        // margin-right: 0px;
+                    // }
+                    // &:after {
+                        // content: "";
+                    // }
+                // }
+            // }
+        // }
+    // }
+    // Message
+    #cfct-message-container {
+        #cfct-message {
+            background-color: #d04a43;
+            color: white;
+        }
+    }
+}
+

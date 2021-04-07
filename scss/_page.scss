@@ -1,0 +1,42 @@
+.page-tell-us {
+    h2 {
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        letter-spacing: 5px;
+    }
+}
+.page-content {
+    p,
+    ul {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    img {
+        width: 100%;
+    }
+}
+.page-submit-task {
+    width: 60%;
+    margin: auto;
+}
+.page-submit-info {
+    font-size: 16px;
+    line-height: 26px;
+}
+.page-subtitle {
+    h2 {
+        font-size: 42px;
+        font-weight: 700;
+        font-style: normal;
+        text-decoration: none;
+        margin-bottom: 0;
+    }
+}
+.page-bg-light-gray {
+    background-color: #eaeced;
+}
+.page-bg-dark-gray {
+    background-color: #d1d3d3;
+}

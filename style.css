@@ -1,0 +1,1023 @@
+/*!
+Theme Name: Crowdfight Theme
+Author: The Crowdfight Team
+Description: Bootstrap 4 Theme for the Crowdfight Covid-19 Wordpress
+Version: 0.0.2
+Tags: bootstrap
+*/
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: local("Raleway Thin Italic"), local("Raleway-ThinItalic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptqg8zYS_SKggPNyCgwLrFmJfWmxA.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: local("Raleway Thin Italic"), local("Raleway-ThinItalic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptqg8zYS_SKggPNyCgwLrFoJfU.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: local("Raleway ExtraLight Italic"), local("Raleway-ExtraLightItalic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwgqB_DNCb_Vo.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: local("Raleway ExtraLight Italic"), local("Raleway-ExtraLightItalic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwgqB_AtCb.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Raleway Light Italic"), local("Raleway-LightItalic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgw5qN_DNCb_Vo.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Raleway Light Italic"), local("Raleway-LightItalic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgw5qN_AtCb.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Raleway Italic"), local("Raleway-Italic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Raleway Italic"), local("Raleway-Italic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptsg8zYS_SKggPNyCg4TYFq.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Raleway Medium Italic"), local("Raleway-MediumItalic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwvqJ_DNCb_Vo.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Raleway Medium Italic"), local("Raleway-MediumItalic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwvqJ_AtCb.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Raleway SemiBold Italic"), local("Raleway-SemiBoldItalic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwkqV_DNCb_Vo.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Raleway SemiBold Italic"), local("Raleway-SemiBoldItalic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwkqV_AtCb.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Raleway Bold Italic"), local("Raleway-BoldItalic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgw9qR_DNCb_Vo.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Raleway Bold Italic"), local("Raleway-BoldItalic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgw9qR_AtCb.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: local("Raleway ExtraBold Italic"), local("Raleway-ExtraBoldItalic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgw6qd_DNCb_Vo.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: local("Raleway ExtraBold Italic"), local("Raleway-ExtraBoldItalic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgw6qd_AtCb.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Raleway Black Italic"), local("Raleway-BlackItalic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwzqZ_DNCb_Vo.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Raleway Black Italic"), local("Raleway-BlackItalic"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwzqZ_AtCb.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local("Raleway Thin"), local("Raleway-Thin"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptsg8zYS_SKggPNwE44Q4FqPfE.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local("Raleway Thin"), local("Raleway-Thin"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptsg8zYS_SKggPNwE44TYFq.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local("Raleway ExtraLight"), local("Raleway-ExtraLight"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwOIpWqhPAMif.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local("Raleway ExtraLight"), local("Raleway-ExtraLight"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwOIpWqZPAA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Raleway Light"), local("Raleway-Light"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqWqhPAMif.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Raleway Light"), local("Raleway-Light"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqWqZPAA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Raleway"), local("Raleway-Regular"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Raleway"), local("Raleway-Regular"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ITw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Raleway Medium"), local("Raleway-Medium"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwN4rWqhPAMif.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Raleway Medium"), local("Raleway-Medium"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwN4rWqZPAA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwPIsWqhPAMif.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwPIsWqZPAA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Raleway Bold"), local("Raleway-Bold"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwJYtWqhPAMif.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Raleway Bold"), local("Raleway-Bold"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwJYtWqZPAA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local("Raleway ExtraBold"), local("Raleway-ExtraBold"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIouWqhPAMif.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local("Raleway ExtraBold"), local("Raleway-ExtraBold"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIouWqZPAA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Raleway Black"), local("Raleway-Black"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwK4vWqhPAMif.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Raleway Black"), local("Raleway-Black"), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwK4vWqZPAA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+html, * {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+a {
+  color: #ed3b3b;
+  text-decoration: underline;
+}
+a:hover {
+  color: #ed3b3b;
+}
+
+.row.content-inner {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.row-background-grey {
+  background-color: #eaeced;
+}
+
+#cfct-site-header {
+  border-top: 4px solid #d04a43;
+}
+#cfct-site-header #cfct-logo img {
+  width: 100%;
+}
+#cfct-site-header #cfct-message-container #cfct-message {
+  background-color: #d04a43;
+  color: white;
+}
+
+#cfct-site-footer {
+  background-color: #eaeced;
+}
+#cfct-site-footer a {
+  color: #212529;
+}
+#cfct-site-footer #cfct-site-footer-container {
+  color: #212529;
+}
+#cfct-site-footer #cfct-site-footer-container #cfct-site-footer-social ul {
+  list-style-type: none;
+  padding: 0px;
+}
+#cfct-site-footer #cfct-site-footer-container #cfct-site-footer-social ul li {
+  display: inline-block;
+  padding-right: 10px;
+}
+#cfct-site-footer #cfct-site-footer-container #cfct-site-footer-social ul li:last-child {
+  padding-right: 0px;
+}
+#cfct-site-footer #cfct-site-footer-container #cfct-site-footer-social ul li img {
+  max-width: 24px;
+}
+@media (max-width: 767px) {
+  #cfct-site-footer #cfct-site-footer-container #cfct-site-footer-text {
+    text-align: center !important;
+  }
+  #cfct-site-footer #cfct-site-footer-container #cfct-site-footer-social {
+    padding-top: 20px;
+    text-align: center !important;
+  }
+  #cfct-site-footer #cfct-site-footer-container #cfct-site-footer-social li {
+    padding-right: 0px;
+  }
+}
+
+#crf-funding-table-filters label {
+  font-weight: 900;
+}
+#crf-funding-table-filters select:focus {
+  border: none;
+  box-shadow: 0 0 0 0.2rem rgba(208, 74, 67, 0.5);
+}
+#crf-funding-table-filters button {
+  background-color: #d04a43;
+  border-color: #d04a43;
+  color: white;
+  font-weight: 600;
+}
+#crf-funding-table-filters button:focus {
+  border: none;
+  box-shadow: none;
+}
+
+#crf-funding-table .card {
+  border: none;
+}
+#crf-funding-table .card a {
+  cursor: pointer;
+  width: 100;
+  padding: 0;
+  margin: 0;
+}
+#crf-funding-table .card .card-header {
+  border: 4px solid #d04a43;
+}
+#crf-funding-table .card .card-header .card-icon {
+  font-size: 4rem;
+  position: absolute;
+  font-weight: 600;
+  bottom: -16px;
+  right: 10px;
+}
+#crf-funding-table .card .card-body {
+  border: none;
+}
+
+#home-cta-container {
+  width: 60%;
+  margin: auto;
+}
+
+.home-cta-image-container img {
+  margin-top: auto;
+  margin-bottom: auto;
+  object-fit: contain;
+  width: 239px;
+  height: 150px;
+}
+@media (max-width: 1199px) {
+  .home-cta-image-container img {
+    height: 200px;
+  }
+}
+
+#cta-covid-separator-image {
+  width: 100%;
+  max-width: 133px;
+}
+
+.home-cta-text {
+  font-size: 1.4em;
+  line-height: 1.4em;
+  font-weight: 400;
+  align-self: center;
+}
+.home-cta-text strong {
+  font-weight: 900;
+}
+
+#home-cta-btn-researchers {
+  background-color: #d04a43 !important;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 0;
+  padding: 0.7em 1.5em;
+  transition: background-color 0.15s ease-in-out;
+}
+#home-cta-btn-researchers:hover {
+  background-color: #a23833 !important;
+  transition: background-color 0.15s ease-in-out;
+}
+
+#home-cta-btn-volunteers {
+  background-color: #0d0149 !important;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 0;
+  padding: 0.7em 1.5em;
+  transition: background-color 0.15s ease-in-out;
+}
+#home-cta-btn-volunteers:hover {
+  background-color: #4e4679 !important;
+  transition: background-color 0.15s ease-in-out;
+}
+
+#home-cta-btn-contact {
+  background-color: #d1d3d3 !important;
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 0;
+  padding: 12px 40px;
+  transition: background-color 0.15s ease-in-out;
+}
+#home-cta-btn-contact:hover {
+  background-color: #b3b3b3 !important;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.home-text-container p {
+  font-size: 18px;
+}
+
+.home-contains-image {
+  text-align: center;
+}
+.home-contains-image img {
+  width: 100%;
+  max-width: 1020px;
+}
+
+.home-some-container ul {
+  list-style-type: none;
+  padding: 0px;
+}
+.home-some-container ul li {
+  display: inline-block;
+  padding-right: 10px;
+}
+.home-some-container ul li:last-child {
+  padding-right: 0px;
+}
+.home-some-container ul li img {
+  max-width: 48px;
+  width: 48px;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+#navbarNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+@media all and (max-width: 576px) {
+  #navbarNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+#navbarNav .nav-item a {
+  position: relative;
+  padding: 0.5em 1em;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#navbarNav .nav-item > a {
+  margin: auto;
+  text-align: center;
+}
+
+#navbarNav .nav-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: block;
+}
+
+#navbarNav .nav-item a:hover {
+  background-color: #f1f1f1;
+}
+
+#navbarNav .nav-item a:active {
+  background-color: #cbcbcb;
+}
+
+#navbarNav .nav-item .nav-link:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ed3b3b;
+}
+
+#menu-header-menu .dropdown {
+  text-align: center;
+}
+
+#menu-header-menu .dropdown-menu {
+  text-align: left;
+  border: none;
+  box-shadow: 0px 5px 5px #cfcfcf;
+}
+
+#menu-header-menu a.dropdown-item {
+  border-left: 3px solid rgba(1, 1, 1, 0);
+  width: auto;
+}
+
+#menu-header-menu a.dropdown-item:hover {
+  border-left: 3px solid #ed3b3b;
+}
+
+.dropdown-ml-1 {
+  margin-left: 0em;
+}
+
+.dropdown-ml-2 {
+  margin-left: 1em;
+}
+
+.dropdown-ml-3 {
+  margin-left: 2em;
+}
+
+.dropdown-ml-4 {
+  margin-left: 3em;
+}
+
+.dropdown-ml-5 {
+  margin-left: 4em;
+}
+
+@media (max-width: 575px) {
+  #menu-header-menu .dropdown-menu {
+    position: static;
+    margin: auto;
+    display: inline-block;
+    float: none;
+  }
+}
+.w90 {
+  width: 90%;
+}
+
+.w80 {
+  width: 80%;
+}
+
+.w70 {
+  width: 70%;
+}
+
+.w60 {
+  width: 60%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.home-cta-cards {
+  --close-margin: 50px;
+}
+
+.join-card {
+  margin-right: calc(-1.7 * var(--close-margin));
+}
+
+.request-card {
+  margin-left: calc(-1.7 * var(--close-margin));
+  margin-top: calc(2 * var(--close-margin));
+  margin-right: -20px;
+  /* Compensate odd clip-path svg behavior */
+}
+
+.shadow-parent {
+  display: inline-block;
+  -webkit-filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
+.join-card,
+.request-card {
+  position: relative;
+  width: calc(550px * 1);
+  /* Sync with svg scale */
+  height: calc(230px * 1.1);
+  /* Sync with svg scale */
+  background-color: #ececec;
+  font-weight: 600;
+  -webkit-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.join-card {
+  padding-top: 1em;
+  -webkit-clip-path: url(#cta-left-clip);
+  clip-path: url(#cta-left-clip);
+}
+
+.request-card {
+  -webkit-clip-path: url(#cta-right-clip);
+  clip-path: url(#cta-right-clip);
+  padding-top: 50px;
+  padding-right: 17px;
+}
+
+.request-card > * {
+  text-align: right;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.join-card::after,
+.request-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+}
+
+.join-card:hover::after {
+  opacity: 1;
+  background-color: rgba(152, 104, 104, 0.5);
+}
+
+.request-card:hover::after {
+  opacity: 1;
+  background-color: rgba(89, 89, 121, 0.5);
+}
+
+.join-card .bottom-card-link,
+.request-card .top-card-link {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  -webkit-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.join-card .bottom-card-link {
+  bottom: 0;
+  left: 0;
+  padding: 0.2em 150px 0.2em 0;
+  background-color: #d04a43;
+}
+
+.request-card .top-card-link {
+  top: 0;
+  right: 0;
+  padding: 0.2em 15px 0.2em 150px;
+  background-color: #4e4679;
+}
+
+.join-card:hover .bottom-card-link,
+.request-card:hover .top-card-link {
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  font-size: 1.5em;
+}
+
+.cover-link {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+}
+
+@media all and (max-width: 992px) {
+  .home-cta-cards {
+    --close-margin: 20px;
+  }
+
+  .home-cta-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .join-card {
+    margin-left: var(--close-margin);
+  }
+
+  .request-card {
+    margin-top: calc(.5 * var(--close-margin));
+    margin-right: calc(-20 + var(--close-margin));
+    margin-left: auto;
+    /* Align right */
+  }
+}
+@media all and (max-width: 576px) {
+  .join-card,
+.request-card {
+    -webkit-clip-path: none;
+    clip-path: none;
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .join-card,
+.request-card,
+.join-card .bottom-card-link,
+.request-card .top-card-link,
+.join-card *,
+.request-card * {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .request-card {
+    margin-top: 30px;
+    margin-right: 0;
+    margin-left: auto;
+    /* Align right */
+    padding-top: 2em;
+  }
+
+  .join-card .bottom-card-link {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .request-card .top-card-link {
+    border-radius: 0 0 10px 10px;
+    top: auto;
+    bottom: 0;
+    margin-bottom: 0;
+  }
+}
+/* MOTIVATION BLOCK */
+.explain-title {
+  --chevron-size: 30px;
+  -webkit-clip-path: polygon(calc(100% - var(--chevron-size)) 0%, 100% 50%, calc(100% - var(--chevron-size)) 100%, 0% 100%, var(--chevron-size) 50%, 0% 0%);
+  clip-path: polygon(calc(100% - var(--chevron-size)) 0%, 100% 50%, calc(100% - var(--chevron-size)) 100%, 0% 100%, var(--chevron-size) 50%, 0% 0%);
+  padding: 1em 1em 1em 3em;
+  min-width: 15em;
+  font-size: 20pt;
+  background-color: #ececec;
+  color: #636363;
+  background-color: #6a6969;
+  color: #ececec;
+  font-weight: 900;
+  position: relative;
+  z-index: 2;
+  margin: 0.5em 0;
+}
+
+.explain-description {
+  --chevron-size: 30px;
+  font-weight: 600;
+  position: relative;
+  z-index: -1;
+  border-left: 3px solid #ea372e;
+  margin-left: 3em;
+  padding-left: 2em;
+  margin: 1em 3em;
+  /* Contents with minimum height of 3 lines, centered */
+  min-height: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.explain-description p:last-child {
+  margin-bottom: 0;
+}
+
+.shadow2 {
+  -webkit-filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
+@media all and (max-width: 992px) {
+  .explain-title {
+    padding: 0.6em 0.6em 0.6em 2.2em;
+    min-width: 10em;
+    font-size: 16pt;
+  }
+}
+@media all and (max-width: 576px) {
+  #crf-motivation > * {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.about-block h5 {
+  position: relative;
+  display: inline;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.about-block h5:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background-color: #cf443c;
+}
+
+#core-team .person-img {
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#core-team .team-person img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#core-team .team-person:hover .person-img img {
+  -webkit-filter: none;
+  filter: none;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.page-tell-us h2 {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+
+.page-content p,
+.page-content ul {
+  font-size: 18px;
+  line-height: 26px;
+}
+.page-content img {
+  width: 100%;
+}
+
+.page-submit-task {
+  width: 60%;
+  margin: auto;
+}
+
+.page-submit-info {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.page-subtitle h2 {
+  font-size: 42px;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+.page-bg-light-gray {
+  background-color: #eaeced;
+}
+
+.page-bg-dark-gray {
+  background-color: #d1d3d3;
+}
+
+.scren-content-wrapper iframe {
+  margin-top: 50px;
+}

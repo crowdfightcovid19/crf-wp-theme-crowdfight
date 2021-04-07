@@ -1,0 +1,42 @@
+<?php
+
+// Walker class to create a flat menu, with no submenus and simple HTML
+// compatible with Bootstrap 4
+class CFCT_Header_Nav_Walker extends Walker_Nav_Menu {
+
+	function start_lvl(&$output, $depth = 0, $args = array()) {
+    if ($depth == 0) {
+      $output .= '<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">';
+      //$output .= "<ul depth=\"$depth\">";
+    } else {
+    }
+	}
+
+	function end_lvl(&$output, $depth = 0, $args = array()) {
+    if ($depth == 0) {
+      $output .= '</div>';
+			// $output .= "</ul>";
+    } else {
+    }
+	}
+
+	function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
+    if ($depth == 0) {
+      $output .= '<li class="nav-item"><a class="nav-link ';
+      if ($args->has_children) {
+        $output .= 'dropdown-toggle';
+      }
+      $output .= '" href=' . esc_attr($item->url) . ">" . $item->title . "</a>";
+    } else {
+      $output .= '<a class="dropdown-item" href=' . esc_attr($item->url) . ">" . $item->title . "</a>";
+    }
+	}
+
+	function end_el(&$output, $item, $depth = 0, $args = array()) {
+    if ($depth == 0) {
+      $output .= "</li>";
+    } else {
+      $output .= '';
+    }
+	}
+}
